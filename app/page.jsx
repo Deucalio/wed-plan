@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <>
@@ -15,13 +17,13 @@ export default function Home() {
         <h1 className="absolute right-0 z-50 m-3 mr-6 flex cursor-pointer items-center gap-2 border-b border-transparent text-2xl text-slate-100 transition-all hover:border-slate-300 hover:text-slate-300">
           portfolio
         </h1>
-
-        <img
+        <Image
           className="h-full w-full"
-          src="
-  https://images.unsplash.com/photo-1509214686682-59f244a5f38a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt=""
-        />
+          height={1080}
+          width={1920}
+          src="https://images.unsplash.com/photo-1509214686682-59f244a5f38a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="image1"
+        ></Image>
 
         <div className="absolute top-1/3 z-50 translate-x-10 text-3xl sm:left-40 sm:translate-x-0 md:top-1/3 lg:left-[15%] lg:text-5xl">
           <p>Wedding planning</p>
@@ -48,7 +50,7 @@ export default function Home() {
             <p className="text-slate-100">Wedding Planning</p>
             <p className="text-sm leading-5 tracking-tight text-gray-400">
               Let us handle the details. Our comprehensive wedding planning got
-              it all covered. So don't be worried about any of it.
+              it all covered. So don&apos;t be worried about any of it.
             </p>
             <h1 className="text-md w-fit cursor-pointer border-b border-slate-200 text-slate-100 transition-all duration-500 hover:border-slate-400 hover:text-slate-400">
               Learn More
@@ -157,7 +159,7 @@ export default function Home() {
             <h1 className="text-2xl leading-7 tracking-tight">
               Your <span className="font-bold">dream wedding</span> begins here.
               We understand that your wedding day is one of the most important
-              moments of your life, and we're here to{" "}
+              moments of your life, and we&apos;re here to{" "}
               <span className="border-b border-slate-300 font-bold">
                 {" "}
                 take care of that.
